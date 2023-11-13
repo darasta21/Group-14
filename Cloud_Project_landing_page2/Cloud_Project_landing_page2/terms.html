@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <link rel="stylesheet" href="terms.css">
+    <script src="Landing_pages.js"></script>
+
+</head>
+<body>
+    <div  class="Header" id="header">
+
+        <h1>LOGO</h1>
+        
+        <ul class="Header__ul">
+         
+            <li class ="Header__li">
+            <a href="landing_Pages.php" class="linkColor1"> Home </a>
+            <div class='menu__indicator' ></div> 
+            </li>
+        
+            <li class ="Header__li">
+                <a href="landing_Pages.php#about" class="linkColor1"> About </a>
+                <div class='menu__indicator' ></div> 
+            </li>
+        
+        
+                <li class ="Header__li">
+                    <a href="landing_Pages.php#services" class="linkColor1"> Services </a>
+                    <div class='menu__indicator' ></div> 
+                </li>
+        
+        
+                    <li class ="Header__li">
+                        <a href="landing_Pages.php#testimonials" class="linkColor1"> Testimonials </a>
+                        <div class='menu__indicator' ></div> 
+                    </li>
+        
+        
+                        <li class ="Header__li">
+                            <a href="landing_Pages.php#contact" class="linkColor1"> Contact </a>
+                            <div class='menu__indicator' ></div> 
+                        </li>
+         
+          </ul>
+        
+          <div class='phoneMenu'>
+        
+          <img src="assets/menu.svg"  alt="menu" class="menuToggle" id="menu"> 
+        
+          <div class="sideBar trans1" id="sidebar">
+          
+          <img src= "assets/close.svg" alt="menu" class='menuToggle menuClose' id="close" onclick="click()">
+        
+            <ul class="phone__ul">
+        
+              <li>
+                
+              <a href="landing_Pages.php"><button class='nav__btn'> Home</button></a>
+              <a href="landing_Pages.php#about"><button class='nav__btn'> About</button></a>
+              <a href="landing_Pages.php#services"><button class='nav__btn'> Services</button></a>
+              <a href="landing_Pages.php#testimonials"><button class='nav__btn'> Testimonials</button></a>
+              <a href="landing_Pages.php#contact"><button class='nav__btn'> Contact</button></a>
+               
+              </li>
+            
+            </ul>
+        
+          </div>
+        </div>
+        
+        </div>
+
+    <div class="terms-box">
+        <div class="terms-text">
+            <h2>Terms of service</h2>
+            <p>Last Edit: 07/11/23</p>
+            <p>Greetings cloud Users</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, incidunt assumenda reiciendis saepe ea fugit sed ipsum ad praesentium exercitationem expedita illum neque! Ea commodi illum libero, temporibus nesciunt animi sed repudiandae debitis. Incidunt, debitis animi esse qui eaque dolores labore nostrum, libero eligendi et a iusto eveniet veritatis ut?</p>
+            <p>Magni aliquid assumenda consectetur pariatur laborum optio nihil blanditiis eius! Non placeat atque ut et aspernatur, earum sint aut beatae distinctio eum modi temporibus, impedit corrupti tenetur suscipit architecto dolorem blanditiis molestias quae fugit ratione. Itaque, deserunt? Quis perferendis suscipit doloremque provident possimus! Minus amet ea deserunt magni, odio harum.</p>
+            <p>Magni voluptatum dicta accusantium deleniti inventore modi corrupti itaque saepe commodi fugiat, temporibus harum illum veniam magnam ab! Cupiditate, pariatur. Dolores totam enim fugit incidunt voluptatibus dolore perspiciatis aliquid vitae, officia expedita illum optio sequi accusantium temporibus esse dolorum aliquam porro corrupti eveniet et accusamus illo exercitationem nisi sit! Saepe.</p>
+            <p>Impedit autem distinctio, fugit adipisci tempore incidunt facilis praesentium rerum consequatur at temporibus asperiores officia, vel officiis eaque laboriosam, vitae unde enim? Animi numquam rerum necessitatibus velit soluta, deserunt molestias nihil, doloribus, quam facilis fugiat illum explicabo! Itaque, consequuntur? At, ducimus laudantium. Non eius temporibus repellendus, aliquid sit libero unde?</p>
+            <p>Quo rerum ipsam similique ex doloribus quisquam necessitatibus repellendus sit accusantium recusandae consequatur voluptatum dolorem sapiente quas, veniam repellat ab commodi neque itaque corporis? Neque corrupti optio ipsa officiis, commodi mollitia quaerat rerum aut repellat officia distinctio error fuga consequatur at ipsam culpa, a aperiam, in laborum facere enim cupiditate?</p>
+            <p>Illum reiciendis nostrum iure tempore aliquam molestiae quibusdam mollitia. Voluptas minus expedita odit placeat architecto, quam neque facilis aspernatur non incidunt quibusdam eos cupiditate molestias? Voluptatem, itaque praesentium officiis eum consequuntur quae aspernatur nam in, expedita alias perferendis aperiam error voluptatum culpa velit autem suscipit provident hic cum dolorem voluptatibus!</p>
+        </div>
+        <h4>I Agree to <span>Terms of Service</span> and i read the privacy Notice.</h4>
+        <div class="buttons">
+            <button class="btn red" id="accept">Accept</button>
+            <button class="btn gray" id="decline">Decline</button>
+        </div>
+    </div>
+    
+       <footer class="footer">
+        <div class="copyright">&copycopyright Mobile Bank At Hand</div>
+        </footer>     
+</body>
+<script>
+    document.getElementById("accept").addEventListener("click", function(){
+        window.location.href = "Registration.php";
+    });
+    document.getElementById("decline").addEventListener("click", function(){
+        window.location.href = "Landing_Pages.php";
+    });
+</script>
+</html>

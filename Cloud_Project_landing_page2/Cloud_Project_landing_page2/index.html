@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Bank At Hand</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js library -->
+
+    <style>
+                           .chart-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 400px;
+                        width: 100%;
+                        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <aside>
+                <div class="top">
+                    <div class="logo">
+                        <img src="download.jpeg" alt="">
+                        <h2>MOBA <span class="danger">ATHA</span></h2>
+                    </div>
+                    <div class="close" id="close-btn">
+                        <span class="material-icons-sharp">close</span>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <a href="#" class="active" onclick="openPage(event, 'Dashboard')">
+                        <span class="material-icons-sharp">grid_view</span>
+                        <h3>Dashboard</h3>
+                    </a>
+                    <a href="#" onclick="openPage(event, 'Account Balance')">
+                        <span class="material-icons-sharp">account_balance</span>
+                        <h3>Account Balance</h3>
+                    </a>
+                    <a href="#" onclick="openPage(event, 'Cards')">
+                        <span class="material-icons-sharp">credit_cards</span>
+                        <h3>Cards</h3>
+                        <span class="card-count">1</span>
+                    </a>
+                    <a href="transactions.html" onclick="openPage(event, 'Transaction')">
+                        <span class="material-icons-sharp">receipt_long</span>
+                        <h3>Transaction</h3>
+                    </a>
+                    <a href="#" onclick="openPage(event, 'Budget') ">
+                        <span class="material-icons-sharp">monetization_on</span>
+                        <h3>Budget</h3>
+                    </a>
+                    <a href="#" onclick="openPage(event, 'Chart')">
+                        <span class="material-icons-sharp">analytics</span>
+                        <h3>Charts</h3>
+                    </a>
+                    <a href="#" onclick="openPage(event, 'Loans')">
+                        <span class="material-icons-sharp">real_estate_agent</span>
+                        <h3>Loans</h3>
+                    </a>
+                    <a href="#" onclick="openPage(event, 'Messages')">
+                        <span class="material-icons-sharp">mail</span>
+                        <h3>Messages</h3>
+                        <span class="message-count">0</span>
+                    </a>
+                    <a href="#" onclick="openPage(event, 'financial_advice')">
+                        <span class="material-icons-sharp">mail</span>
+                        <h3>Financial Advice</h3>
+                    </a>
+                    <a href="withdrawals.html" onclick="openPage(event, 'WITHDRAW')">
+                        <span class="material-icons-sharp">money</span>
+                        <h3>WITHDRAW</h3>
+                    </a>
+                    <a href="#" onclick="openPage(event, 'Settings')">
+                        <span class="material-icons-sharp">settings</span>
+                        <h3>Settings</h3>
+                    </a>
+                    <a href="#" onclick="openPage(event, 'Logout')">
+                        <span class="material-icons-sharp">logout</span>
+                        <h3>Logout</h3>
+                    </a>
+                </div>
+            </aside>
+            <!-- =======================End of side============================= -->
+
+            <!-- ==============================main=========================== -->
+            <main>
+                <h1>Dashboard</h1>
+
+                <div class="date">
+                    <input type="date">
+                </div>
+                <div class="insights">
+                    <div class="sales">
+                        <span class="material-icons-sharp">account_balance</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3 style="margin-top: 2rem;">BALANCE</h3>
+                                <h1>$10000000</h1>
+                            </div>
+                            
+                        </div>
+                        <small class="text-muted">Last 24hrs</small>
+                    </div>
+                    <!-- =======================End Of Balance================= -->
+                    
+                    <div class="loans">
+                        <span class="material-icons-sharp">real_estate_agent</span>
+                        <div class="middle">
+                            <h3 style="margin-top: 2rem;">LOANS</h3>
+                            <div class="progress">
+                                <div class="site">
+                                    <p>Target reached</p>
+                                    <h1>$25000</h1>
+
+                                    <p>Savings Reached</p>
+                                    <h1>$2000</h1>
+                                </div>
+                                <div class="bar" style="margin-right: -5rem;">
+                                     <svg>
+                                    <circle cx="38" cy="38" r="36"></circle>
+                                </svg>
+                                <div class="number">
+                                    <p>50%</p>
+                                </div>
+                               
+                                </div>
+                            </div>
+                            <small class="text-muted">Last 24hrs</small>
+                        </div>
+                    </div>
+                    <!-- =======================End of ================= -->
+
+                    <div class="transaction">
+                        <span class="material-icons-sharp">receipt_long</span>
+                        <h3 style="margin-top: 2rem;">All Transactions</h3>
+                        <div class="trans" style="margin-top: 4rem;">
+                                <div style="display: flex;">
+                                    <div class="pic" style="margin-top: 4rem;">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="cont" >
+                                    <p>AYUK PAUL </p>
+                                    <P>20-04-2022</P>
+                                </div>
+                                <div class="amt">
+                                    <h2 style="margin-left: 7rem;">-$20,000</h2>
+                                </div>
+                            </div>
+                            
+                        
+                            <div style="display: flex;">
+                                    <div class="pic" style="margin-top: 4rem;">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="cont">
+                                    <p>AYUK PAUL </p>
+                                    <P>20-04-2022</P>
+                                </div>
+                                <div class="amt">
+                                    <h2 style="margin-left: 7rem;">+$25,000</h2>
+                                </div>
+                            </div>
+                            
+                            <div style="display: flex;">
+                                <div class="pic">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="cont">
+                                    <p>AYUK PAUL </p>
+                                    <P>20-04-2022</P>
+                                </div>
+                                <div class="amt">
+                                    <h2 style="margin-left: 7rem;">+$2000</h2>
+                                </div>  
+                            </div>
+                            
+                        </div>
+                            <small class="text-muted">Last 24hrs</small><br>
+                         <a href="transactions.html"><button style="color: white; height: 
+                         5vh; width: 15vh; background: rgb(177, 99, 245); border-radius: 5rem;
+                         cursor: pointer;">See Transactions</button>
+                         </a>
+                    </div>
+                    
+                    <!-- =======================End Of Transactions================= -->
+
+                    <div class="budget">
+                        <span class="material-icons-sharp">monetization_on</span><br><br>
+                        <h3 style="margin-top: 2rem;">BUDGETS</h3><br><br>
+                        <div class="cash" style="display: flex;" >
+                            <h1>CASH</h1><br><br>
+                            <h2 style="margin-left: 3rem;">$0.0000000000000</h2>
+                        </div>
+                    </div>
+                    <!-- ======================================End of Budget =====================================-->
+                    <div class="cards">
+                        <span class="material-icons-sharp">credit_cards</span>
+                        <h3 style="margin-top: 2rem;">CARDS</h3>
+                        <img src="OIP (2).jpeg" alt="">
+
+                    </div>
+                    <!-- ============================end of Cards=================================== -->
+                    <div class="messages">
+                        <span class="material-icons-sharp">mail</span>
+                        <h3 style="margin-top: 2rem;">MESSAGES</h3><br>
+
+                        <p style="margin-top: 4rem; color: black; font-size: 1.3rem;"> 12-Nov-2023 <br>Transction succes. You have suuccesfully withdrawn $25000 </p><br>
+                        <p style="margin-top: 4rem; color: black; font-size: 1.3rem;">14-Nov-2023 <br>successfully deposited $10000000</p>
+                    </div>
+
+                    <div class="chart">
+                            <span class="material-icons-sharp">analytics</span>
+                            <h3 style="margin-top: 2rem;">CHARTS</h3>
+
+                            
+
+
+                        <h1>Banking Platform Pie Chart</h1>
+                        <div class="chart-container">
+                            <canvas id="chart"></canvas> <!-- Use a canvas element for the chart -->
+                        </div>
+                        </div>
+
+                        <!-- -=================================== end of charts===========================-->
+                        <div class="financial_advice">
+                            <span class="material-icons-sharp">mail</span>
+                            <h3 style="margin-top: 2rem;">Financial Advice</h3>
+                            <p style="margin-top: 4rem; color: black; font-size: 1.3rem;">LEARN TO SAVE MONEY IN YOUR ACCOUNT BECAUSE LIFE IS HARD SO DO NOT ALLOW THOSE
+                                GIRLS TO EAT ALL YOUR MONEY.
+                            </p>
+                        </div>
+
+                        <div class="widrawal" style="height: 40vh;">
+                            <span class="material-icons-sharp">money</span><br><br>
+                            <h3>WITHDRAW</h3><br><br><br>
+
+
+                            <a href="withdrawals.html"><button style="color: white; height: 
+                                5vh; width: 30vh; background: rgb(177, 99, 245); border-radius: 5rem;
+                                cursor: pointer;">Click Here To Withdraw</button></a>
+                        </div>
+
+                </div>
+            </main>
+     <!-- ========================================messages============================================= -->
+                    
+     
+
+
+
+            <!-- =================STart of top========== -->
+
+            <div class="right">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-icons-sharp">menu</span>
+                    </button>
+                    <div class="theme-toggler">
+                        <span class="material-icons-sharp active">light_mode</span>
+                        <span class="material-icons-sharp">dark_mode</span>
+                    </div>
+                    <div class="profile">
+                        <div class="info">
+                            <p>Hello, <b>USER</b></p>
+                            <small class="text-muted">Admin</small>
+                        </div>
+                        <div class="profile-photo">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+<!-- =====================================JAVA SCRIPT=============================================================== -->
+        <script>
+                                // You can modify the data for the pie chart here
+const pieData = [
+  { label: 'January', value: 100 },
+  { label: 'February', value: 200 },
+  { label: 'March', value: 150 },
+  { label: 'April', value: 300 },
+  { label: 'May', value: 250 }
+];
+
+// Calculate the total value of all data points
+const totalValue = pieData.reduce((sum, data) => sum + data.value, 0);
+
+// Get the chart container element
+const chartContainer = document.getElementById('chart');
+
+// Create the pie chart using Chart.js library
+new Chart(chartContainer, {
+  type: 'pie',
+  data: {
+    labels: pieData.map(data => data.label),
+    datasets: [{
+      data: pieData.map(data => (data.value / totalValue) * 100),
+      backgroundColor: [
+        '#FF6384',
+        '#36A2EB',
+        '#FFCE56',
+        '#4BC0C0',
+        '#9966FF'
+      ]
+    }]
+  },
+  options: {
+    responsive: true,
+    legend: {
+      position: 'bottom'
+    }
+  }
+});
+
+    const themeToggler = document.querySelector(".theme-toggler");
+
+    themeToggler.addEventListener('click',()=>{
+        document.body.classList.toggle("dark-theme-variables")
+
+        themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
+        themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
+    })
+
+
+
+// ==================================LINK PAGES ON ACTIVE-------===========================
+
+function openPage(event, pageId) {
+  // Load the content of the selected page
+  fetchPage(pageId)
+    .then(content => {
+      // Display the content in the page container
+      const pageContainer = document.getElementById('pageContainer');
+      pageContainer.innerHTML = content;
+
+      // Highlight the active link
+      const links = document.getElementsByTagName('a');
+      for (let i = 0; i < links.length; i++) {
+        links[i].classList.remove('active');
+      }
+      event.target.classList.add('active');
+    })
+    .catch(error => {
+      console.error('Error loading page:', error);
+    });
+}
+
+function fetchPage(pageId) {
+  return fetch(pageId + '.html')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Page not found');
+      }
+      return response.text();
+    });
+}
+
+
+
+
+        </script>
+</body>
+</html>

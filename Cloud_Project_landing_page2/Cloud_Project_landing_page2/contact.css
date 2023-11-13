@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.form-group{
+    margin: 10px 0;
+}
+
+.form-group input, .form-group textarea{
+    background: #eaeaea;
+}
+
+.abstract_input{
+    width: 50%;
+    margin: auto;
+}
+
+.Contatact__Container .card{
+    width: 80%;
+    margin: auto; 
+    margin: 90px auto 200px auto;
+}
+
+.card{
+    box-shadow: 0 10px 20px #201f1f8b;
+    border-radius: 10px;
+    /* background-color: rgba(0, 0, 0, 0.042);   */
+    background: #fff;
+    
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact_btn{
+    width: 150px;
+    padding: 10px;
+    background-color:  #3c00a0;;
+    display: flex;
+    border-radius: 15px;
+    border: none;
+    justify-content: center;
+    color: white;
+    transition: all 1s ease;
+}
+
+@media screen and (max-width: 800px){
+
+    .abstract_input{
+        width: 100%;
+    }
+
+    .input_flex_container{
+        padding: 0;
+        width: 100%;
+        justify-content: end;
+    }
+
+    .input_flex{
+        width: 100%;
+    }
+
+}
